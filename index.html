@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/090c88f0b4.js"></script>
+
+</head>
+<body>
+<header class="header">
+    <img src="images/icon.png" alt="#" class="header__logo">
+    <button id="header__button" class="header__button">Create Visit</button>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+
+            <select  title="Choose a doctor" name="Choose a doctor" id="choose" class="choose">
+                <option disabled value="0" selected>Choose a doctor</option>
+                <option value="Cardiologist"id="Cardiologist">Cardiologist</option>
+                <option value="Dentist" id="Dentist">Dentist</option>
+                <option value="Therapist" id="Therapist">Therapist</option>
+            </select>
+            <div class="options__input" id="cardiologistInput">
+                <div class="modal-content__input--group">
+                    <label >Name </label>
+                    <input type="text" placeholder="Name" class="options__input__field" id="fullNameCardio" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label>Visit </label>
+                    <input type="date" placeholder="Date of visit" class="options__input__field" id="DateOfVisitCardio" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label >Goal of Visit </label>
+                    <input type="text" placeholder="Goal of Visit" class="options__input__field" id="PurposeCardio" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="cardioAge">Age </label>
+                <input type="number" placeholder="Age" class="options__input__field" id="cardioAge" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="Pressure">Pressure </label>
+                    <input type="number" placeholder="Normal pressure" class="options__input__field" id="Pressure" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="BodyMassIndex">BodyMassIndex</label>
+            <input type="number" placeholder="Body mass index" class="options__input__field" id="BodyMassIndex" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="Diseases">Diseases</label>
+            <input type="text" placeholder="Post cardiovascular diseases"  class="options__input__field" id="Diseases" required>
+                </div>
+                <label class="comments">Comments</label>
+            </div>
+            <div class="options__input" id="dentistInput">
+                <div class="modal-content__input--group">
+                    <label>Name </label>
+                    <input type="text" placeholder="Name" class="options__input__field" id="fullNameDentist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label>Visit </label>
+                    <input type="date" placeholder="Date of visit" class="options__input__field" id="DateOfVisitDentist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label >Goal of Visit </label>
+                    <input type="text" placeholder="Goal of Visit" class="options__input__field" id="PurposeDentist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="LastVisitDate">LastVisitDate</label>
+            <input type="date" placeholder="Date of last visit" class="options__input__field" id="LastVisitDate" required>
+                </div>
+                <label class="comments">Comments</label>
+            </div>
+            <div class="options__input" id="therapistInput">
+                <div class="modal-content__input--group">
+                    <label >Name </label>
+                    <input type="text" placeholder="Name" class="options__input__field" id="fullNameTherapist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label >Visit </label>
+                    <input type="date" placeholder="Date of visit" class="options__input__field" id="DateOfVisitTherapist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label>Goal of Visit</label>
+                    <input type="text" placeholder="Goal of Visit" class="options__input__field" id="PurposeTherapist" required>
+                </div>
+                <div class="modal-content__input--group">
+                    <label for="Age">Age</label>
+                <input type="number" placeholder="Age" class="options__input__field" id="Age" required>
+                </div>
+                <label class="comments">Comments</label>
+                </div>
+
+            <textarea name="additionalComments" id="additionalComments" cols="30" rows="10" placeholder="" class="additionalComments" maxlength="400"></textarea>
+
+            <div class="options__buttons" id="optionsButtons">
+            <button id="CreateVisit" class="options___buttons--button">Create Visit</button>
+            <button id="CloseVisit" class="options___buttons--button">Close Visit</button>
+                </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="visitDesk" id="visitDesk">
+    <p class="visitDesk__txt" id="visitDeskTxt">No items have been added</p>
+
+</div>
+<script src="js/index.js"></script>
+
+</body>
+</html>
